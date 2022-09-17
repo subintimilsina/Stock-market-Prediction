@@ -1,0 +1,30 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="{% static 'css/news.css' %}">
+    <title>News</title>
+</head>
+<body>
+    <div class="container">
+        {% for news in Title %}
+        {% with i=forloop.counter %}
+            <a href="{% url 'sentiment' i %}">
+                <div class="block">
+                    <div style="padding: 0 0 5px 2px;">news {{i}}</div>
+                    <hr>
+                    <span style="padding: 0 0 0 2px;">
+                        {{ news }}
+                    </span>
+                </div>
+            </a>
+        {% endwith %}
+        {% endfor %}
+       
+    </div>
+</body>
+</html>

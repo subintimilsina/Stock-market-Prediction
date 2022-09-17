@@ -1,0 +1,135 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="{% static "css/style.css"%}">
+    <link rel="shortcut icon" type="image/png" href="{% static "img/favicon.png"%}">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/3a28dede3b.js" crossorigin="anonymous"></script>
+
+    <title>Design</title>
+</head>
+<body>
+
+    <div class="home">
+
+        <nav class="navigation">
+            <div class="navigation__logo-box">
+                <img src="{% static "img/logo.png"%}" alt="Nav logo" class="navigation__logo">
+            </div>
+            <ul class="navigation__list">
+                <li class="naviagtion__items"><a href="#" class="navigation__links">
+                    <i class="fas fa-home navigation__icons"></i>
+                    <span class="navigation__text">Home</span>
+                </a></li>
+                <li class="naviagtion__items"><a href="#" class="navigation__links">
+                    <i class="fab fa-dashcube navigation__icons"></i>
+                    <span class="navigation__text">Dashboard</span>
+                </a></li>
+                <li class="naviagtion__items"><a href="{% url 'news' %}" class="navigation__links">
+                    <i class="fas fa-newspaper navigation__icons"></i>
+                    <span class="navigation__text">News</span>
+                </a></li>
+                <li class="naviagtion__items"><a href="#predict" class="navigation__links">
+                <i class="fas fa-search navigation__icons"></i>
+                <span class="navigation__text">Predict</span>
+                </a></li>
+                <li class="naviagtion__items"><a href="{% url 'details' %}" class="navigation__links">
+                    <i class="fas fa-search navigation__icons"></i>
+                    <span class="navigation__text">Details</span>
+                    </a></li>
+                <li class="naviagtion__items"><a href="#footer" class="navigation__links">
+                    <i class="fas fa-phone-square navigation__icons"></i>
+                    <span class="navigation__text">Contact us</span>
+                </a></li>
+            </ul>
+        </nav>
+
+        <div class="page-content">
+
+            <header class="header">
+                <div class="header__box">
+                    <h1 class="heading-primary">
+                        Welcome to B3S 
+                    </h1>
+                    <div class="header__logo-box">
+                        <img src="img/logo.png" alt="" class="header__logo">
+                    </div>
+                    <h1 class="heading-primary">
+                        Nepse Predictor
+                    </h1>
+                    <p class="header__text">
+                        In your service to make trading easier.
+                    </p>
+                </div>
+            </header>
+
+            <main id="predict">
+                <section class="section-predict">
+                    <div class="predict">
+                        <h2 class="heading-secondary u-center-text u-margin-bottom-medium">
+                            Predict your stock
+                        </h2>
+
+                        <form action="{% url 'result' %}" class="predict__form">
+                            Choose the csv file:
+                            <label for="csv">
+                                <select name="csv" id="csv">
+                                    <option value="csv1">ADBL.csv</option>
+                                    <option value="csv2">hdl.csv</option>
+                                    <option value="csv3">mnbbl.csv</option>
+                                </select>
+                            </label>
+                            and model:
+                            <label for="model">
+                                <select name="model" id="model">
+                                    <option value="model1">Model1</option>
+                                    <option value="model2">Model2</option>
+                                </select>
+                            </label>
+                            <input type="submit" value="Predict" class="predict__submit">
+                        </form>
+                    </div>
+                </section>
+            </main>
+
+            <footer class="footer" id="footer">
+                <div class="footer__logo-box">
+                    <img src="{%static "img/logo.png"%}" alt="Nav logo" class="footer__logo">
+                </div>
+                <div class="footer__content">
+                    <div class="footer__contact-box">
+                        <h3 class="heading-tertiary u-margin-bottom-small">Contact Us</h3>
+                        <ul class="footer__contact-list">
+                            <li class="contact-items">Khwopa College</li>
+                            <li class="contact-items">Libali,bhaktapur</li>
+                            <li class="contact-items">Khwopa@gmail.com</li>
+                            <li class="contact-items">01 6598752</li>
+                        </ul>
+                    </div>
+                    <div class="footer__about">
+                        <h3 class="heading-tertiary u-margin-bottom-small">About Us</h3>
+                        <p class="footer__text">
+                            B3S was created with the common goal of servicing the NEPSE communtiy while involving in trading.All our team member bring to the table their unique expertise and experience in order to help the traders.
+                        </p>
+                    </div>
+                    <div class="footer__copyright">
+                        <h3 class="heading-tertiary u-margin-bottom-small">Copyright</h3>
+                        <p class="footer__text">This website was devloped by B3S team.</p>
+                        <p class="footer__text">Copyright &copy; 2021 claimed by B3s.</p>
+                    </div>
+                </div>
+
+            </footer>
+        </div>
+
+    </div>
+    
+</body>
+</html>

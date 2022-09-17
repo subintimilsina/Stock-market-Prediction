@@ -1,0 +1,10 @@
+asgiref 
+certifi==2020.6.20
+Django 
+gunicorn==20.1.0
+psycopg2 
+pytz==2020.1
+sqlparse 
+waitress==2.0.0
+whitenoise==6.0.0
+wincertstore==0.2

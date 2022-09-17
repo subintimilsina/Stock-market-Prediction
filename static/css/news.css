@@ -1,0 +1,46 @@
+*, 
+html, 
+body {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: rgba(250, 246, 246, 0.809);
+    position: relative;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.container {
+    width: 90vw;
+    position: absolute;
+    left: 50%;
+    padding: 20px;
+    transform: translateX(-50%);
+}
+
+.block {
+    background-color: aliceblue;
+    display: block;
+    padding: 40px;
+    margin: 40px;
+    border-radius: 5px;
+    border: 1px solid rgb(138, 137, 137);
+    box-shadow: 5px 5px 5px  5px rgba(255, 221, 221, 0.7);
+    cursor: pointer;
+}
+
+.block:hover {
+    transform: translate(-3px, -3px);
+    box-shadow: 5px 5px 5px  10px rgba(255, 221, 221, 0.7);
+}
+
+.block:active {
+    transform: translate(-1px, -1px);
+    box-shadow: 5px 5px 5px  6px rgba(255, 221, 221, 0.7);
+}
+

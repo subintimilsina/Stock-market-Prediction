@@ -1,0 +1,187 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: 'Lato' , sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.7;
+  color: #777; }
+
+.u-center-text {
+  text-align: center !important; }
+
+.u-margin-bottom-big {
+  margin-bottom: 8rem  !important; }
+
+.u-margin-bottom-medium {
+  margin-bottom: 4rem !important; }
+
+.u-margin-bottom-small {
+  margin-bottom: 1.5rem !important; }
+
+.u-margin-top-big {
+  margin-top: 8rem !important; }
+
+.u-margin-top-medium {
+  margin-top: 4rem !important; }
+
+.u-margin-top-huge {
+  margin-top: 10rem !important; }
+
+body {
+  font-family: 'Lato' , sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.7;
+  color: #777; }
+
+.heading-primary {
+  color: #fff;
+  text-transform: uppercase; }
+
+.heading-secondary {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  background-image: linear-gradient(to right, #7ed56f, #28b455);
+  color: transparent;
+  letter-spacing: 2px;
+  transition: all .2s; }
+  /* .heading-secondary:hover {
+    transform: skewX(15deg) skewY(2deg) scale(1.1);
+    text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); } */
+
+.heading-tertiary {
+  font-size: 1.3rem;
+  font-weight: 700;
+  text-transform: uppercase; }
+
+.paragraph {
+  font-size: 1.3rem; }
+  .paragraph:not(:last-child) {
+    margin-bottom: 3rem; }
+
+.predict {
+  display: block;
+  text-align: center; 
+  position: relative;}
+  .predict__form:not(:last-child) {
+    margin-bottom: 1rem; }
+  .predict__label {
+    display: inherit;
+    margin-bottom: 1rem; }
+  .predict__input {
+    display: inherit;
+    width: 50%;
+    padding: 1.5rem 3rem;
+    margin: 0 auto;
+    margin-bottom: 2rem; }
+  .predict__submit {
+    display: block;
+    padding: 1rem 3rem;
+    background-color: #55c57a;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    position: absolute;
+    margin-top: 10px;
+    left: 50%;
+    transform: translateX(-50%); 
+  }
+  .predict__result {
+    display: block;
+    width: 70%;
+    margin: 0  auto; }
+  .predict__img {
+    width: 100%; }
+
+.navigation {
+  padding: 1rem;
+  background-color: #000;
+  color: #fff;
+  width: 20%;
+  height: 100vh; }
+  .navigation__logo-box {
+    width: 40%;
+    margin: 0 auto; }
+  .navigation__logo {
+    width: 100%;
+    display: block; }
+  .navigation__list {
+    list-style: none; }
+  .navigation__links {
+    display: block;
+    padding: 2rem 3rem;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.8rem;
+    background-color: rgba(119, 119, 119, 0.3);
+    margin-bottom: 3px;
+    transition: all .3s; }
+    .navigation__links:hover {
+      background-color: #55c57a; }
+  .navigation__icons {
+    margin-right: 2rem; }
+
+.header {
+  height: 95vh;
+  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 85, 0.8)), url("../img/home1.jpg");
+  background-size: cover;
+  background-position: top;
+  text-align: center;
+  color: #fff;
+  position: relative;
+  letter-spacing: 1px;
+  font: 1.3rem; }
+  .header__box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  .header__logo {
+    height: 13rem; }
+  .header__text {
+    font-weight: 700; }
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  font-size: 1.1rem;
+  padding: 1rem 2rem;
+  text-align: center; }
+  .footer__content {
+    display: flex; }
+  .footer__contact-box {
+    flex-basis: 30%; }
+  .footer__contact-list {
+    list-style: none; }
+  .footer__about {
+    flex-basis: 40%; }
+  .footer__logo {
+    display: block;
+    height: 7rem;
+    margin: 0 auto; }
+  .footer__copyright {
+    flex-basis: 30%; }
+
+.home {
+  position: relative; }
+  .home .navigation {
+    width: 20%;
+    position: fixed;
+    top: 0;
+    left: 0; }
+  .home .page-content {
+    width: 80%;
+    position: absolute;
+    top: 0;
+    left: 20%; }
+    .home .page-content .section-predict {
+      margin: 8rem 0; }

@@ -1,0 +1,29 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% comment %} <link rel="stylesheet"  href="{% static 'css/news.css' %}"> {% endcomment %}
+    <title>Resutl</title>
+    <style>
+        .container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div><h2>Predicted value is: {{value}}</h2></div>
+        <img src='data:image/png;base64,{{ result }}'>
+    </div>
+    <div>  
+        <a href="{% url 'index' %}">Go back to dashboard</a>
+    </div>
+</body>
+</html>
